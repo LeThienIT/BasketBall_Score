@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_marginTop="100dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:text="Team 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Team 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/tvScore1"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/tvScore2"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_centerHorizontal="true"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            android:layout_width="2dp"
+            android:layout_height="150dp"></View>
+
+        <Button
+            android:backgroundTint="#03A9F4"
+            android:textAlignment="center"
+            android:text="+1 Point"
+            android:id="@+id/btnScoreA1"
+            android:layout_marginRight="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:backgroundTint="#03A9F4"
+            android:textAlignment="center"
+            android:text="+2 Point"
+            android:layout_marginRight="90dp"
+            android:layout_below="@+id/btnScoreA1"
+            android:id="@+id/btnScoreA2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:backgroundTint="#03A9F4"
+            android:textAlignment="center"
+            android:text="+3 Point"
+            android:layout_marginRight="90dp"
+            android:layout_below="@id/btnScoreA2"
+            android:id="@+id/btnScoreA3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:backgroundTint="#03A9F4"
+            android:textAlignment="center"
+            android:text="+1 Point"
+            android:layout_toRightOf="@id/btnScoreA1"
+            android:id="@+id/btnScoreB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:backgroundTint="#03A9F4"
+            android:textAlignment="center"
+            android:text="+2 Point"
+            android:layout_below="@id/btnScoreA1"
+            android:layout_toRightOf="@id/btnScoreA2"
+            android:id="@+id/btnScoreB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:backgroundTint="#03A9F4"
+            android:textAlignment="center"
+            android:text="+3 Point"
+            android:layout_below="@id/btnScoreA2"
+            android:layout_toRightOf="@id/btnScoreA3"
+            android:id="@+id/btnScoreB3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+    </RelativeLayout>
+
+    <Button
+        android:textColor="@color/black"
+        android:backgroundTint="#959393"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:text="Reset"
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+</LinearLayout>
